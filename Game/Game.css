@@ -1,0 +1,42 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	background-image: url(background.jpg);
+	font-family: sans-serif;
+}
+
+#level_title {
+	font-size: 18px;
+	color: black;		
+	font-weight: bold;
+}
+
+#button3{
+	display: none;
+}
+
+#level_image2{
+	display: none;
+	position: absolute;
+	margin-top: -300px;
+	margin-left: 500px;
+}
+
+#level_image3{
+	display: none;
+	position: absolute;
+	margin-top: -450px;
+	margin-left: 500px;
+}
+
+#button4{
+	border-style: none;
+	background: none;
+	display:none ;
+	position: absolute;
+	margin-top: 350px;
+	margin-left: 50px;
+}
