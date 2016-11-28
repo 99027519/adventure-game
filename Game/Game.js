@@ -1,4 +1,3 @@
-var HasKey = false;
 function Level1() {
 	console.log("Level1()");
 
@@ -171,27 +170,14 @@ function Level9() {
 	opt1.innerHTML = 'Ga verder';
 	opt1.setAttribute("onClick", "javascript:Level10();");
 	var opt2 = document.getElementById('button2');
-	opt2.style.display = "inline-block";
+	opt2.style.display = "none";
 	opt2.innerHTML = 'Vil de beer';
 	opt2.setAttribute("onClick", "javascript:Level8();");
-	opt2.onclick = function(){
-		if(HasKey){
-			Level2();
-		} else {
-			alert('Je hebt een mes nodig');
-		}
-	}
 	var opt3 = document.getElementById('button3');
 	opt3.style.display = "none";
 	opt3.innerHTML = 'Zet je tent op';
 	opt3.onClick = function(){
 			Level4();
-		}
-	var opt4 = document.getElementById('button4');
-	opt4.style.display = "block";
-	opt4.setAttribute("onClick", "javascript:Level11();");
-	opt4.onClick = function(){
-		HasKey = true;
 		}
 	document.getElementById('level_title').innerHTML = 'level 9';
 	document.getElementById('level_image').src = 'Level9.jpg';
@@ -199,23 +185,61 @@ function Level9() {
 	document.getElementById('level_image2').style.display = "none";
 }
 
+function Level10() {
+	console.log("Level10()");
+
+	var opt1 = document.getElementById('button1');
+	opt1.innerHTML = 'Loop er naar toe';
+	opt1.setAttribute("onClick", "javascript:Level11();");
+	var opt2 = document.getElementById('button2');
+	opt2.style.display = "inline-block";
+	opt2.innerHTML = 'Doorlopen';
+	opt2.setAttribute("onClick", "javascript:Level12();");
+	var opt3 = document.getElementById('button3');
+	opt3.style.display = "none";
+	opt3.innerHTML = 'Zet je tent op';
+	opt3.onClick = function(){
+			Level4();
+		}
+	document.getElementById('level_title').innerHTML = 'level 10';
+	document.getElementById('level_image').src = 'Level10.jpg';
+}
+
 function Level11() {
 	console.log("Level11()");
 
 	var opt1 = document.getElementById('button1');
-	opt1.innerHTML = 'Ga verder';
+	opt1.style.display = "none";
+	opt1.innerHTML = 'Loop er naar toe';
 	opt1.setAttribute("onClick", "javascript:Level11();");
 	var opt2 = document.getElementById('button2');
-	opt2.style.display = "inline-block";
-	opt2.innerHTML = 'Vil de beer';
-	opt2.setAttribute("onClick", "javascript:Level8();");
-	opt2.onclick = function(){
-		if(HasKey){
-			Level2();
-		} else {
-			alert('Je hebt een mes nodig');
+	opt2.style.display = "none";
+	opt2.innerHTML = 'Doorlopen';
+	opt2.setAttribute("onClick", "javascript:Level12();");
+	var opt3 = document.getElementById('button3');
+	opt3.style.display = "none";
+	opt3.innerHTML = 'Zet je tent op';
+	opt3.onClick = function(){
+			Level4();
 		}
-	}
+	var opt4 = document.getElementById('button4');
+	opt4.style.display = "inline-block";
+	opt4.setAttribute("onClick", "javascript:Level13();");
+	document.getElementById('level_title').innerHTML = 'level 11';
+	document.getElementById('level_image').src = 'Level11.jpg';
+}
+
+function Level13() {
+	console.log("Level13()");
+
+	var opt1 = document.getElementById('button1');
+	opt1.style.display = "none";
+	opt1.innerHTML = 'Loop er naar toe';
+	opt1.setAttribute("onClick", "javascript:Level11();");
+	var opt2 = document.getElementById('button2');
+	opt2.style.display = "none";
+	opt2.innerHTML = 'Doorlopen';
+	opt2.setAttribute("onClick", "javascript:Level12();");
 	var opt3 = document.getElementById('button3');
 	opt3.style.display = "none";
 	opt3.innerHTML = 'Zet je tent op';
@@ -224,12 +248,11 @@ function Level11() {
 		}
 	var opt4 = document.getElementById('button4');
 	opt4.style.display = "none";
-	opt4.setAttribute("onClick", "javascript:Level10();");
-	opt4.onClick = function(){
-		HasKey = true;
-		}
-	document.getElementById('level_title').innerHTML = 'level 9';
-	document.getElementById('level_image').src = 'Level9.jpg';
-	document.getElementById('level_image3').style.display = "none";
-	document.getElementById('level_image2').style.display = "none";
+	opt4.setAttribute("onClick", "javascript:Level13();");
+	var opt5 = document.getElementById('button4');
+	opt5.style.display = "none";
+	opt5.setAttribute("onClick", "javascript:Level13();");
+	document.getElementById('level_title').innerHTML = 'level 13';
+	document.getElementById('level_image').src = 'Level13.jpg';
 }
+
