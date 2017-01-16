@@ -14,7 +14,6 @@ function Level1() {
 	opt3.onClick = function(){
 	}
 
-	document.getElementById('level_title').innerHTML = 'level 1';
 	document.getElementById('level_image').src = 'level1.jpg';
 }
 
@@ -36,8 +35,6 @@ function Level2() {
 	opt4.style.display = "none";
 	opt4.onClick = function(){
 		}
-
-	document.getElementById('level_title').innerHTML = 'level 2';
 	document.getElementById('level_image').src = 'level2.jpg';
 	document.getElementById('level_image2').style.display = "none";
 }
@@ -52,7 +49,6 @@ function Level3() {
 	opt1.innerHTML = 'Ren weg';
 	opt1.setAttribute("onClick", "javascript:Level5();");
 
-	document.getElementById('level_title').innerHTML = 'level 3';
 	document.getElementById('level_image').src = 'level3.jpg';
 	document.getElementById('level_image2').style.display = "none";
 }
@@ -70,7 +66,6 @@ function Level4() {
 			Level4();
 		}
 
-	document.getElementById('level_title').innerHTML = 'level 4';
 	document.getElementById('level_image').src = 'level3.jpg';
 	document.getElementById('level_image3').style.display = "block";
 	document.getElementById('level_image2').style.display = "none";
@@ -88,7 +83,6 @@ function Level5() {
 	opt2.onClick = function(){
 			Level4();
 		}
-	document.getElementById('level_title').innerHTML = 'level 5';
 	document.getElementById('level_image').src = 'level5.jpg';
 	document.getElementById('level_image2').style.display = "none";
 }
@@ -111,7 +105,6 @@ function Level6() {
 	opt3.onClick = function(){
 			Level4();
 		}
-	document.getElementById('level_title').innerHTML = 'level 6';
 	document.getElementById('level_image').src = 'level6.jpg';
 	document.getElementById('level_image2').style.display = "none";
 }
@@ -135,7 +128,6 @@ function Level7() {
 	opt3.onClick = function(){
 			Level4();
 		}
-	document.getElementById('level_title').innerHTML = 'level 7';
 	document.getElementById('level_image').src = 'level1.jpg';
 	document.getElementById('level_image2').style.display = "block";
 }
@@ -158,7 +150,6 @@ function Level8() {
 	opt3.onClick = function(){
 			Level4();
 		}
-	document.getElementById('level_title').innerHTML = 'level 8';
 	document.getElementById('level_image').src = 'Einde2.jpg';
 	document.getElementById('level_image2').style.display = "none";
 }
@@ -179,7 +170,6 @@ function Level9() {
 	opt3.onClick = function(){
 			Level4();
 		}
-	document.getElementById('level_title').innerHTML = 'level 9';
 	document.getElementById('level_image').src = 'Level9.jpg';
 	document.getElementById('level_image3').style.display = "none";
 	document.getElementById('level_image2').style.display = "none";
@@ -196,12 +186,11 @@ function Level10() {
 	opt2.innerHTML = 'Doorlopen';
 	opt2.setAttribute("onClick", "javascript:Level12();");
 	var opt3 = document.getElementById('button3');
-	opt3.style.display = "none";
+	opt3.style.isplay = "none";
 	opt3.innerHTML = 'Zet je tent op';
 	opt3.onClick = function(){
 			Level4();
 		}
-	document.getElementById('level_title').innerHTML = 'level 10';
 	document.getElementById('level_image').src = 'Level10.jpg';
 }
 
@@ -225,7 +214,6 @@ function Level11() {
 	var opt4 = document.getElementById('button4');
 	opt4.style.display = "inline-block";
 	opt4.setAttribute("onClick", "javascript:Level13();");
-	document.getElementById('level_title').innerHTML = 'level 11';
 	document.getElementById('level_image').src = 'Level11.jpg';
 }
 
@@ -233,9 +221,9 @@ function Level13() {
 	console.log("Level13()");
 
 	var opt1 = document.getElementById('button1');
-	opt1.style.display = "none";
-	opt1.innerHTML = 'Loop er naar toe';
-	opt1.setAttribute("onClick", "javascript:Level11();");
+	opt1.style.display = "inline-block";
+	opt1.innerHTML = 'Loop verder';
+	opt1.setAttribute("onClick", "javascript:Level14();");
 	var opt2 = document.getElementById('button2');
 	opt2.style.display = "none";
 	opt2.innerHTML = 'Doorlopen';
@@ -252,7 +240,92 @@ function Level13() {
 	var opt5 = document.getElementById('button4');
 	opt5.style.display = "none";
 	opt5.setAttribute("onClick", "javascript:Level13();");
-	document.getElementById('level_title').innerHTML = 'level 13';
 	document.getElementById('level_image').src = 'Level13.jpg';
 }
 
+function Level14() {
+	console.log("Level14()");
+
+	var opt1 = document.getElementById('button1');
+	opt1.style.display = "inline-block";
+	opt1.innerHTML = 'Loop verder';
+	opt1.setAttribute("onClick", "javascript:Level15();");
+	var opt2 = document.getElementById('button2');
+	opt2.style.display = "none";
+	opt2.innerHTML = 'Doorlopen';
+	opt2.setAttribute("onClick", "javascript:Level12();");
+	var opt3 = document.getElementById('button3');
+	opt3.style.display = "none";
+	opt3.innerHTML = 'Zet je tent op';
+	opt3.onClick = function(){
+			Level4();
+		}
+	var opt4 = document.getElementById('button4');
+	opt4.style.display = "none";
+	opt4.setAttribute("onClick", "javascript:Level13();");
+	var opt5 = document.getElementById('button4');
+	opt5.style.display = "none";
+	opt5.setAttribute("onClick", "javascript:Level13();");
+	document.getElementById('level_image').src = 'Level14.jpg';
+}
+
+function Level15() {
+	console.log("Level15()");
+
+	var opt1 = document.getElementById('button1');
+	opt1.style.display = "none";
+	opt1.innerHTML = 'Loop verder';
+	opt1.setAttribute("onClick", "javascript:Level14();");
+	var opt2 = document.getElementById('button2');
+	opt2.style.display = "none";
+	opt2.innerHTML = 'Doorlopen';
+	opt2.setAttribute("onClick", "javascript:Level12();");
+	var opt3 = document.getElementById('button3');
+	opt3.style.display = "none";
+	opt3.innerHTML = 'Zet je tent op';
+	opt3.onClick = function(){
+			Level4();
+		}
+	var opt4 = document.getElementById('button4');
+	opt4.style.display = "none";
+	opt4.setAttribute("onClick", "javascript:Level13();");
+	var opt5 = document.getElementById('button4');
+	opt5.style.display = "none";
+	opt5.setAttribute("onClick", "javascript:Level13();");
+	var opt6 = document.getElementById('button5');
+	opt6.style.display = "inline-block";
+	opt6.setAttribute("onClick", "javascript:Level16();");
+	document.getElementById('level_image').src = 'Level15.jpg';
+}
+
+function Level16() {
+	console.log("Level16()");
+
+	var opt1 = document.getElementById('button1');
+	opt1.style.display = "inline-block";
+	opt1.innerHTML = 'Loop verder';
+	opt1.setAttribute("onClick", "javascript:Level17();");
+	var opt2 = document.getElementById('button2');
+	opt2.style.display = "none";
+	opt2.innerHTML = 'Doorlopen';
+	opt2.setAttribute("onClick", "javascript:Level12();");
+	var opt3 = document.getElementById('button3');
+	opt3.style.display = "none";
+	opt3.innerHTML = 'Zet je tent op';
+	opt3.onClick = function(){
+			Level4();
+		}
+	var opt4 = document.getElementById('button4');
+	opt4.style.display = "none";
+	opt4.setAttribute("onClick", "javascript:Level13();");
+	var opt5 = document.getElementById('button4');
+	opt5.style.display = "none";
+	opt5.setAttribute("onClick", "javascript:Level13();");
+	var opt6 = document.getElementById('button5');
+	opt6.style.display = "none";
+	opt6.setAttribute("onClick", "javascript:Level16();");
+	var opt7 = document.getElementById('button6');
+	opt7.style.display = "inline-block";
+	opt7.setAttribute("onClick", "javascript:Level16();");
+	document.getElementById('level_image').src = 'Level15.jpg';
+}

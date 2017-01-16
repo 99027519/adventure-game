@@ -40,3 +40,21 @@ body {
 	margin-top: 125px;
 	margin-left: 750px;
 }
+
+#button5{
+	border-style: none;
+	background: none;
+	display:none ;
+	position: absolute;
+	margin-top: 325px;
+	margin-left: 700px;
+}
+
+#button6{
+	border-style: none;
+	background: none;
+	display:none ;
+	position: absolute;
+	margin-top: 350px;
+	margin-left: 625px;
+}
